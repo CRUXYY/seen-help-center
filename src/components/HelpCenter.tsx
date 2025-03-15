@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
+import { ReactComponent as HandMoneyIcon } from '../assets/icons/hand-money-icon.svg';
 
 const Container = styled.div`
   display: flex;
@@ -91,6 +92,7 @@ const IconContainer = styled.div`
   svg {
     width: 24px;
     height: 24px;
+    color: #0C0E0F;
   }
 `;
 
@@ -208,13 +210,7 @@ const HelpCenter: React.FC = () => {
         
         <HelpItem onClick={() => navigate('/receiving-tip')}>
           <IconContainer>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18.5 8.5V8C18.5 6.067 16.933 4.5 15 4.5H9C7.067 4.5 5.5 6.067 5.5 8V8.5" stroke="#0C0E0F" strokeWidth="1.5" strokeLinecap="round"/>
-              <path d="M12 15V12" stroke="#0C0E0F" strokeWidth="1.5" strokeLinecap="round"/>
-              <path d="M8 12.5L8.5 12" stroke="#0C0E0F" strokeWidth="1.5" strokeLinecap="round"/>
-              <path d="M16 12.5L15.5 12" stroke="#0C0E0F" strokeWidth="1.5" strokeLinecap="round"/>
-              <rect x="5.5" y="8" width="13" height="11.5" rx="2" stroke="#0C0E0F" strokeWidth="1.5"/>
-            </svg>
+            <HandMoneyIcon />
           </IconContainer>
           <ItemContent>
             <ItemTitle>Receiving Tip</ItemTitle>
